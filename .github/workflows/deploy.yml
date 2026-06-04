@@ -25,4 +25,3 @@ jobs:
           aws stepfunctions start-execution \
             --state-machine-arn ${{ YOUR_STATE_MACHINE_ARN }} \
             --input "{}"
-``

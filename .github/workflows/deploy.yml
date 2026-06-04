@@ -23,5 +23,5 @@ jobs:
       - name: Start Step Functions
         run: |
           aws stepfunctions start-execution \
-            --state-machine-arn ${{ YOUR_STATE_MACHINE_ARN }} \
+            --state-machine-arn ${{ secrets.STEP_FUNCTIONS_ARN }} \
             --input "{}"

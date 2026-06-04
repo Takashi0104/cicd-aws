@@ -2,7 +2,7 @@ name: Trigger Step Functions
 
 on:
   workflow_run:
-    workflows: ["ci"]
+    workflows: ["test"]
     types:
       - completed
 

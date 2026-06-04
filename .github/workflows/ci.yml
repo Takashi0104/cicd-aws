@@ -25,4 +25,3 @@ jobs:
 
       - name: pytest実行
         run: pytest
-``

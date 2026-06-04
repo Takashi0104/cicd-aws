@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Pythonセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: ライブラリインストール
+        run: |
+          pip install -r requirements.txt
+
+      - name: pytest実行
+        run: pytest
+``

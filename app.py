@@ -4,5 +4,5 @@ def add(a, b):
     return a + b
 
 if __name__ == "__main__":
-    print("VERSION 1")
+    print("VERSION 2")
     time.sleep(10)
